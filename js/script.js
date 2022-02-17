@@ -9,6 +9,7 @@ function start() { // Inicio da função start()
 	$("#fundoGame").append("<div id='amigo' class='anima3'></div>");
 	$("#fundoGame").append("<div id='placar'></div>");
 	$("#fundoGame").append("<div id='energia'></div>");
+	$("#fundoGame").append("<div id='botao' onclick='Mudo()'></div>");
 
 
     //Principais variáveis do jogo
@@ -473,6 +474,37 @@ function reiniciaJogo() {
 	
 } //Fim da função reiniciaJogo
 
+function Mudo(){
+
+	
+
+
+
+
+ if(musica.muted == true && somDisparo.muted == true && somExplosao.muted == true &&	musica.muted == true &&	somGameover.muted == true && somPerdido.muted == true && somResgate.muted == true){
+	$("#botao").css("background-image", "url(imgs/botao1.png)");
+	 musica.muted = false;	
+somDisparo.muted = false;
+somExplosao.muted = false;
+musica.muted = false;
+somGameover.muted = false;
+somPerdido.muted = false;
+somResgate.muted = false;
+	
+}else{
+	$("#botao").css("background-image", "url(imgs/botao2.png)");
+	musica.muted = true;	
+somDisparo.muted = true;
+somExplosao.muted = true;
+musica.muted = true;
+somGameover.muted = true;
+somPerdido.muted = true;
+somResgate.muted = true;
+}
+
+
+
+}
 
 
 
