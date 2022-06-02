@@ -471,6 +471,9 @@ function reiniciaJogo() {
 	somGameover.pause();
 	$("#fim").remove();
 	start();
+	if(musica.muted == true){
+	   $("#botao").css("background-image", "url(imgs/botao1.png)");
+	   }
 	
 } //Fim da função reiniciaJogo
 
